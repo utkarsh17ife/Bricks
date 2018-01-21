@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+     <script type="text/javascript">
+        $(document).ready(function(){
+            $(".button-collapse").sideNav({
+                menuWidth: 250, // Default is 300
+                edge: 'left', // Choose the horizontal origin
+                closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                draggable: false // Choose whether you can drag to open on touch screens
+            });
+            $('.modal').modal();
+            });
+    </script>
+    <style>
+      .container {
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 90%;
+      }
+      @media  only screen and (min-width: 601px){.container{width:60%}}
+      @media  only screen and (min-width: 993px){.container{width:90%}}
+    </style>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl" ng-init="edited = 0">
+
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="/portal" class="brand-logo">Bricks</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/signout/"><i class="material-icons left">list</i>Logout</a></li>
+        </ul>
+
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="/signout/"><i class="material-icons left">list</i>Logout</a></li>
+         </ul>
+    </div>
+  </nav>
+
+  <h1>Welcome User</h1>
+
+</body>
+</html>
