@@ -25,7 +25,7 @@ SECRET_KEY = 'i4zmwda1#d^c51a1y1e8#0v2s4&h7a@np=&@$^9rflf=emx0wb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sillybricks2018.herokuapp.com']
+ALLOWED_HOSTS = ['sillybricks2018.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
