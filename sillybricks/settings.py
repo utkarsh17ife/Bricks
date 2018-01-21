@@ -76,9 +76,18 @@ WSGI_APPLICATION = 'sillybricks.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dd59f6582k94sk',
+        'USER': 'pspmuouvhsukkt',
+        'PASSWORD': '2dfa940054eaa5a6424e6ff8ca44fbf7a57136cf42bf62f0d3bf771ee8a01a49',
+        'HOST': 'ec2-54-243-253-24.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
+
+    #'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    #}
 }
 
 
